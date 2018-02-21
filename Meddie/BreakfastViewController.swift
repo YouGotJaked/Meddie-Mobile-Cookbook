@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  BreakfastViewController.swift
 //  Meddie
 //
 //  Created by Jake Day on 2/20/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class BreakfastViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

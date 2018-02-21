@@ -15,6 +15,8 @@
 		156EF3DE203D33DE00BA9A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156EF3DC203D33DE00BA9A15 /* LaunchScreen.storyboard */; };
 		156EF3E9203D33DE00BA9A15 /* MeddieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156EF3E8203D33DE00BA9A15 /* MeddieTests.swift */; };
 		156EF3F4203D33DE00BA9A15 /* MeddieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156EF3F3203D33DE00BA9A15 /* MeddieUITests.swift */; };
+		156EF402203D481B00BA9A15 /* DinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156EF401203D481B00BA9A15 /* DinnerViewController.swift */; };
+		156EF404203D48B400BA9A15 /* DessertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156EF403203D48B400BA9A15 /* DessertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		156EF3EF203D33DE00BA9A15 /* MeddieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeddieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		156EF3F3203D33DE00BA9A15 /* MeddieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeddieUITests.swift; sourceTree = "<group>"; };
 		156EF3F5203D33DE00BA9A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		156EF401203D481B00BA9A15 /* DinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerViewController.swift; sourceTree = "<group>"; };
+		156EF403203D48B400BA9A15 /* DessertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +106,9 @@
 				156EF3D1203D33DE00BA9A15 /* AppDelegate.swift */,
 				156EF3D3203D33DE00BA9A15 /* HomeViewController.swift */,
 				156EF3D5203D33DE00BA9A15 /* BreakfastViewController.swift */,
+				156EF401203D481B00BA9A15 /* DinnerViewController.swift */,
 				156EF3D7203D33DE00BA9A15 /* Main.storyboard */,
+				156EF403203D48B400BA9A15 /* DessertViewController.swift */,
 				156EF3DA203D33DE00BA9A15 /* Assets.xcassets */,
 				156EF3DC203D33DE00BA9A15 /* LaunchScreen.storyboard */,
 				156EF3DF203D33DE00BA9A15 /* Info.plist */,
@@ -262,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156EF404203D48B400BA9A15 /* DessertViewController.swift in Sources */,
+				156EF402203D481B00BA9A15 /* DinnerViewController.swift in Sources */,
 				156EF3D6203D33DE00BA9A15 /* BreakfastViewController.swift in Sources */,
 				156EF3D2203D33DE00BA9A15 /* AppDelegate.swift in Sources */,
 				156EF3D4203D33DE00BA9A15 /* HomeViewController.swift in Sources */,
