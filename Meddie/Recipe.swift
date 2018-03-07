@@ -9,24 +9,45 @@
 import Foundation
 
 struct Ingredient {
-    var name = ""
     var quantity = 0.0
     var measurement = ""
+    var name = ""
     
-    public var description: String { return String(quantity) + " \(measurement) \(name)" }
+    public var description: String { return displayWholeNumber(d: quantity) + " \(measurement) \(name)" }
 }
 
 class Recipe {
+    var name: String
+    var meal: String
+    var difficulty: Int
     var ingredients: [Ingredient] = []
     var steps: [String] = []
-    var meal = ""
     
-    func addIngredient(n: String, q: Double, m: String) {
-        ingredients.append(Ingredient(name: n, quantity: q, measurement: m))
+    init(name: String, meal: String, difficulty: Int) {
+        self.name = name
+        self.meal = meal
+        self.difficulty = difficulty
+
+    }
+    
+    func addIngredient(q: Double, m: String, n: String) {
+        ingredients.append(Ingredient(quantity: q, measurement: m, name: n))
     }
     
     func addStep(step: String) {
         steps.append(step)
+    }
+    
+    func setMeal(m: String) {
+        meal = m
+    }
+    
+    func setDifficulity(d: Int) {
+        difficulty = d
+    }
+    
+    func getName() -> String {
+        return name
     }
     
     func getIngredient(index: Int) -> Ingredient {
@@ -39,6 +60,30 @@ class Recipe {
     
     func getMeal() -> String {
         return meal
+    }
+    
+    func getDifficulty() -> String {
+        return String(difficulty)
+    }
+    
+    func getDifficulty() -> Int {
+        return difficulty
+    }
+    
+    func getIngredients() -> String {
+        var out = ""
+        for ingredient in ingredients {
+            out.append(ingredient.description + "\n")
+        }
+        return out
+    }
+    
+    func getSteps() -> String {
+        var out = ""
+        for (index, step) in steps.enumerated() {
+            out.append(String(index + 1) + ". " + step + "\n")
+        }
+        return out
     }
     
     func compareIngredients(i1: Ingredient, i2: Ingredient) -> Bool {
@@ -56,19 +101,31 @@ class Recipe {
     
     func displayIngredients() {
         for ingredient in ingredients {
-            print(ingredient)
+            print(ingredient.description)
         }
     }
     
     func displaySteps() {
-        for step in steps {
-            print(step)
+        for (index, step) in steps.enumerated() {
+            print(String(index + 1) + ". " + step)
         }
     }
     
     func displayMeal() {
         print(meal)
     }
+    
+    func displayRecipe() -> String {
+        var out = "Name: " + getName() + "\n"
+        out.append("\nCategory: " + getMeal() + "\n")
+        out.append("\nDifficulty: " + getDifficulty() + "\n")
+        out.append("\nIngredients: \n" + getIngredients())
+        out.append("\nDirections: \n" + getSteps())
+        return out
+    }
 }
 
+private func displayWholeNumber(d: Double) -> String {
+    return d.truncatingRemainder(dividingBy: 1) == 0 ? String(Int(d)) : String(d)
+}
 

@@ -18,6 +18,7 @@
 		156EF402203D481B00BA9A15 /* DinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156EF401203D481B00BA9A15 /* DinnerViewController.swift */; };
 		156EF404203D48B400BA9A15 /* DessertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156EF403203D48B400BA9A15 /* DessertViewController.swift */; };
 		156EF408203D514D00BA9A15 /* home_bg.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 156EF407203D514D00BA9A15 /* home_bg.JPG */; };
+		15923CB5204F6A350033CE91 /* Cookbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15923CB4204F6A350033CE91 /* Cookbook.swift */; };
 		15F62B1A204E816F007AB5B6 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F62B19204E816F007AB5B6 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		156EF401203D481B00BA9A15 /* DinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerViewController.swift; sourceTree = "<group>"; };
 		156EF403203D48B400BA9A15 /* DessertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertViewController.swift; sourceTree = "<group>"; };
 		156EF407203D514D00BA9A15 /* home_bg.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = home_bg.JPG; path = ../../../../Downloads/Pictures/home_bg.JPG; sourceTree = "<group>"; };
+		15923CB4204F6A350033CE91 /* Cookbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cookbook.swift; sourceTree = "<group>"; };
 		15F62B19204E816F007AB5B6 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				156EF3DC203D33DE00BA9A15 /* LaunchScreen.storyboard */,
 				156EF3DF203D33DE00BA9A15 /* Info.plist */,
 				15F62B19204E816F007AB5B6 /* Recipe.swift */,
+				15923CB4204F6A350033CE91 /* Cookbook.swift */,
 			);
 			path = Meddie;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				156EF402203D481B00BA9A15 /* DinnerViewController.swift in Sources */,
 				156EF3D6203D33DE00BA9A15 /* BreakfastViewController.swift in Sources */,
 				15F62B1A204E816F007AB5B6 /* Recipe.swift in Sources */,
+				15923CB5204F6A350033CE91 /* Cookbook.swift in Sources */,
 				156EF3D2203D33DE00BA9A15 /* AppDelegate.swift in Sources */,
 				156EF3D4203D33DE00BA9A15 /* HomeViewController.swift in Sources */,
 			);

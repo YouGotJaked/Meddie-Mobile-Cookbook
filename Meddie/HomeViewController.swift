@@ -9,11 +9,14 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    // Mark: Properties
+    @IBOutlet weak var appNameView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addBackground(filename: "home_bg.JPG")
-        addBlur()
+        addTitle(textView: appNameView, appName: "MOBILE COOKBOOK", color: .white)
+        //addSubtitle(desc: "A")
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,15 +27,27 @@ class HomeViewController: UIViewController {
     func addBackground(filename: String) {
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: filename)
+        addImageBlur(image: backgroundImage)
         self.view.insertSubview(backgroundImage, at: 0)
     }
     
-    func addBlur() {
+    func addImageBlur(image: UIImageView) {
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = view.bounds
+        blurEffectView.frame = image.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.addSubview(blurEffectView)
+        image.addSubview(blurEffectView)
+    }
+    
+    func addTitle(textView: UITextView!, appName: String, color: UIColor) {
+        textView.text = appName
+        textView.font = (UIFont .boldSystemFont(ofSize: view.frame.size.width / 8))
+        textView.textColor = color
+        textView.textAlignment = .center
+    }
+    
+    func addSubtitle(desc: String) {
+        
     }
 }
 
